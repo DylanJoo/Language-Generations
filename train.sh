@@ -1,0 +1,21 @@
+python3 train.py \
+				--data_dir 'msmarco_data' \
+				--mt \
+				--max_src_length 100 \
+				--max_tgt_length 20 \
+				--min_occ 3 \
+				--epochs 5\
+				--n_batch 32 \
+				--learning_rate 0.001 \
+				--teacher_forcing 0.5 \
+				--embedding_dimension 300 \
+				--hidden_dimension 256 \
+				--latent_dimension 16 \
+				--word_dropout 0 \
+				--dropout 0.1 \
+				--n_layer 1 \
+				--af 'logistic' \
+				--k 0.0025\
+				--x0 2500 \
+				--dump_file 'dumps' \
+				--model_file 'checkpoint' \
